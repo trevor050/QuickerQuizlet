@@ -1,4 +1,4 @@
-# QuickerQuizlet 1.1.0
+# QuickerQuizlet 1.2.0
 A faster way of creating Quizlet imports for translation
 
 # How to use
