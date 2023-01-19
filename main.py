@@ -1,11 +1,17 @@
 from typing import Text
 import googletrans
+#install using pip install googletrans==4.0.0-rc1
 
-
-#take a string, then every new line split the string, then put that through google translate. the come back with orginalword, translatedword. example: hola \n gordo comes out with hola, hello \n gordo, fat. Translate from eng to spanish
 wordlist = []
 fixedoutputs = []
-def translate(text):
+
+NoParentheses = True
+#Disable this if you want a word with Parentheses to show. Enabled (Defualt): Desear (+ infinitive), To wish.  Disabled: Desear (+infinitive), To wish (+infinitive)
+
+def SmartTranslate(text):
+    if NoParentheses:
+        if "(" in text:
+            text = text.split("(")[0]
     translator = googletrans.Translator()
     translated = translator.translate(text, dest='en')
     return translated.text
@@ -16,7 +22,6 @@ contents = []
 while True:
     try:
         line = input()
-        #check if --stop is included
         if line == "--stop":
             break
             contents.append(line)
@@ -30,7 +35,7 @@ print("\n\n\n\n")
 def FinalTranslatedResult(wordlist):
     wordlist_length = len(wordlist)
     for word in range(wordlist_length):
-        fixedoutputs.append(wordlist[word]+ ', ' + translate(wordlist[word]))
+        fixedoutputs.append(wordlist[word]+ ', ' + SmartTranslate(wordlist[word]))
     return fixedoutputs
 
 final_result = FinalTranslatedResult(wordlist)
