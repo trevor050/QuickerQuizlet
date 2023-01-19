@@ -1,5 +1,6 @@
 from typing import Text
 import googletrans
+import socket
 #install using pip install googletrans==4.0.0-rc1
 
 wordlist = []
@@ -17,20 +18,42 @@ def SmartTranslate(text):
     return translated.text
 
 
+def IsOnline(host="8.8.8.8", port=53, timeout=3):
+    """
+    Host: 8.8.8.8 (google-public-dns-a.google.com)
+    OpenPort: 53/tcp
+    Service: domain (DNS/TCP)
+    """
+    try:
+        socket.setdefaulttimeout(timeout)
+        socket.socket(socket.AF_INET, socket.SOCK_STREAM).connect((host, port))
+        return True
+    except socket.error as ex:
+        return False
+
+
+
 print("Paste your quizlet string, add --stop on a newline to save it.")
 contents = []
 while True:
     try:
         line = input()
-        if line == "--stop":
+        if line.lower() == "--stop":
             break
             contents.append(line)
     except EOFError:
         break
     wordlist.append(line)
 
+if not IsOnline():
+    print("\n")
+    print("Error: Cannot connect to the internet. Please make sure your online and try again.")
+    exit()
+
 print("Loading...")
-print("\n\n\n\n")
+print("\n\n\n")
+
+
 
 def FinalTranslatedResult(wordlist):
     wordlist_length = len(wordlist)
