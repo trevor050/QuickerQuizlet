@@ -8,5 +8,5 @@ If you have a list of words you need to translate into a quizlet document this a
 When creating a new set you should see a "+ Import from Word, Excel, Google Docs, etc." near the top. Click it, then select comma, and makesure new line is selected. Then paste the output from the python script and click import. Your all done with no hassle! 
 
 # Other Features
-- NoParentheses: Toggleable. Enabled (Defualt): Desear (+ infinitive), To wish.  Disabled: Desear (+infinitive), To wish (+infinitive)
-- EasyTxt: You will be prompted if you would like to make a texrt file with the results. If you already have a textfile it will be overwritten! Textfiles are outputted in the folder that the main.py is inside.
+- No Parentheses: Toggleable. Enabled (Defualt): Desear (+ infinitive), To wish.  Disabled: Desear (+infinitive), To wish (+infinitive)
+- Quick Text File: You will be prompted if you would like to make a text file with the results. If you already have a textfile it will be overwritten! Textfiles are outputted in the folder that the main.py is inside.
