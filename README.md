@@ -1,4 +1,4 @@
-# QuickerQuizlet 2.0.1 🚀
+# QuickerQuizlet 2.0.2 🚀
 Your go-to tool for creating Quizlet sets just got faster, smarter, and even easier to use.
 
 ## What's New in 2.0? 🎉
