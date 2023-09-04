@@ -19,6 +19,8 @@ When creating a new set you should see a "+ Import from Word, Excel, Google Docs
 ## Other Features
 - No Parentheses: Toggleable. Enabled (Defualt): Desear (+ infinitive), To wish.  Disabled: Desear (+infinitive), To wish (+infinitive)
 - Quick Text File: You will be prompted if you would like to make a text file with the results. If you already have a textfile it will be overwritten! Textfiles are outputted in the folder that the main.py is inside.
+- Extreme Speed Mode: Got a lot of text? No problem Extreme Speed Mode can multithread for faster speed (Disabled by default. Rate limiting possible though I have not encountered it)
+- Efficiency Mode: Avoids unnecessary API calls. The more you use QuickerQuizlet the faster it gets! 
 
 
 # Getting Started
