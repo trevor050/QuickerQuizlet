@@ -1,8 +1,8 @@
-# QuickerQuizlet 2.0.0 🚀
+# QuickerQuizlet 2.0.1 🚀
 Your go-to tool for creating Quizlet sets just got faster, smarter, and even easier to use.
 
-## What's New? 🎉
-- Much Faster: Up to 10x faster in optimal conditions. Feel the wind in your hair!
+## What's New in 2.0? 🎉
+- Much Faster: Up to 10x faster in optimal conditions. Feel the wind in your hair!h
 - Tons of Customization: Tailor your experience with advanced user settings.
 - Import from File: Got a list? We can handle it.
 - Fat-Finger Protection: A more forgiving --stop for when your fingers have a mind of their own.
@@ -14,7 +14,7 @@ A faster way of creating Quizlet imports for translation
 If you have a list of words you need to translate into a quizlet document this allows you to create it instanly. Run main.py with googletrans installed In the terminal and then paste your quizlet code. On a newline type --stop to stop.
 
 ## Importing to Quizlet
-When creating a new set you should see a "+ Import from Word, Excel, Google Docs, etc." near the top. Click it, then select comma, and makesure new line is selected. Then paste the output from the python script and click import. Your all done with no hassle! 
+When creating a new set you should see a "+ Import from Word, Excel, Google Docs, etc." near the top. Click it, then select comma, and makesure new line is selected. Then paste the output from the python script and click import. You're all done with no hassle! 
 
 ## Other Features
 - No Parentheses: Toggleable. Enabled (Defualt): Desear (+ infinitive), To wish.  Disabled: Desear (+infinitive), To wish (+infinitive)
