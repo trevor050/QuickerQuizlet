@@ -19,8 +19,8 @@ output_lang = "en"
 
 # ADVANCED SETTINGS
 
-# Enable high-speed processing. Creates an extra file though (True/False). Recommended: True
-high_speed_mode = True 
+# Enable highly efficent processing. Creates an extra file though (True/False). Recommended: True
+efficiency_mode = True 
 
 # Enable SmartTranslate for optimal functionality (True/False). Strongly Recommended: True
 smart_translate = True 
@@ -64,12 +64,12 @@ def SmartTranslate(text: str, context: str = '', format_output=False) -> str:
     if no_parentheses:
         if "(" in text:
             text = text.split("(")[0].strip()
-
-    if original_text in translation_cache:
-        if format_output == True or extreme_speed_mode == True:
-            formattedfix = f"{original_text}, {translation_cache[original_text]}"
-            return formattedfix
-        return translation_cache[original_text]
+    if efficiency_mode:
+        if original_text in translation_cache:
+            if format_output == True or extreme_speed_mode == True:
+                formattedfix = f"{original_text}, {translation_cache[original_text]}"
+                return formattedfix
+            return translation_cache[original_text]
 
     translator = googletrans.Translator()
     translated = translator.translate(f"{text} {context}", dest='en').text  # Adjust 'en' to your desired language if needed
@@ -108,7 +108,7 @@ def load_translation_cache(filename='translation_cache.json'):
             translation_cache = json.load(f)
         print(f"Cache loaded from {filename}")
     except FileNotFoundError:
-        print(f"No cache file found. Creating a new one at {filename}")
+        print(f"Efficiency Mode: No cache file found. Creating a new one at {filename}")
         translation_cache = {}
         save_translation_cache(filename)
 
@@ -134,8 +134,8 @@ def read_wordlist_from_file(filename: str) -> list:
 if not __name__ == "__main__":
     print("Error: Please run this script directly.")
     exit()
-
-load_translation_cache()
+if efficiency_mode:
+    load_translation_cache()
 if import_from_file:
     print("Please enter the file path.")
     filename = input("")
@@ -188,7 +188,8 @@ def create_text_file(final_result):
         for item in final_result:
             f.write(item + "\n")
     return
-save_translation_cache()
+if efficiency_mode:
+    save_translation_cache()
 print("Would you like to turn it into a text file? (y/n)")
 TextFileAsk = input("")
 TextFileAsk = TextFileAsk.lower()
