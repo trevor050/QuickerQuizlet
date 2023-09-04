@@ -1,4 +1,12 @@
-# QuickerQuizlet 1.2.0
+# QuickerQuizlet 2.0.0 🚀
+Your go-to tool for creating Quizlet sets just got faster, smarter, and even easier to use.
+
+## What's New? 🎉
+- Much Faster: Up to 10x faster in optimal conditions. Feel the wind in your hair!
+- Tons of Customization: Tailor your experience with advanced user settings.
+- Import from File: Got a list? We can handle it.
+- Fat-Finger Protection: A more forgiving --stop for when your fingers have a mind of their own.
+- Code Glow-Up: Refactored, polished, and looking sharp.
 
 A faster way of creating Quizlet imports for translation
 
