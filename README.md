@@ -2,7 +2,7 @@
 Your go-to tool for creating Quizlet sets just got faster, smarter, and even easier to use.
 
 ## What's New in 2.0? 🎉
-- Much Faster: Up to 10x faster in optimal conditions. Feel the wind in your hair!h
+- Much Faster: Up to 10x faster in optimal conditions. 
 - Tons of Customization: Tailor your experience with advanced user settings.
 - Import from File: Got a list? We can handle it.
 - Fat-Finger Protection: A more forgiving --stop for when your fingers have a mind of their own.
