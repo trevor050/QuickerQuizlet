@@ -1,4 +1,4 @@
-#install using pip install googletrans==4.0.0-rc1
+#install using "pip install googletrans==4.0.0-rc1"
 import googletrans
 
 # USER SETTINGS
