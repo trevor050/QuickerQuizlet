@@ -4,7 +4,7 @@ import googletrans
 # USER SETTINGS
 
 # Show words with parentheses (True/False)
-# Example: True -> "To wish"; False -> "To wish (+infinitive)"
+# Example assuming input is "desear (+infinitive)" Outputs are: True -> "To wish"; False -> "To wish (+infinitive)"
 no_parentheses = True
 
 # Import quizlet strings from a file path (True/False)
